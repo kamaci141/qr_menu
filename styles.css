@@ -1,0 +1,293 @@
+body {
+    background-color: #F7F7F5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 5px;
+    line-height: 1.6;
+}
+
+.menu-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    padding: 2px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+
+
+h1 {
+    text-align: center;
+    color: #1E1E1E;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.section {
+    margin-bottom: 25px;
+}
+
+.accordion-header {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border: 2px solid #dee2e6;
+    border-radius: 10px;
+    padding: 35px 25px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 1.6em;
+    font-weight: 600;
+    color: #2c3e50;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    min-height: 80px;
+}
+
+
+
+.accordion-header:hover {
+    background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-color: #adb5bd;
+}
+
+.tatlılar-header {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/tatlılar.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+.tatlılar-header:hover {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/tatlılar.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white !important;
+}
+
+.kahveler-header {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/kahveler.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+.kahveler-header:hover {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/kahveler.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white !important;
+}
+
+.içecekler-header {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/içecekler.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+.içecekler-header:hover {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/içecekler.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white !important;
+}
+
+.anayemekler-header {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/anayemekler.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+.anayemekler-header:hover {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/anayemekler.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white !important;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+    border-bottom: 1px solid #f1f3f4;
+    transition: background-color 0.2s ease;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.menu-item:hover {
+    background-color: #f8f9fa;
+}
+
+.menu-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+}
+
+.item-details {
+    flex: 1;
+    padding: 0 15px;
+    min-width: 0;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.item-name {
+    font-weight: 600;
+    font-size: 1.1em;
+    color: #2c3e50;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.item-price {
+    color: #27ae60;
+    font-weight: 700;
+    font-size: 1.1em;
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+h4 {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    margin: 2px 0 0 0;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 1.3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 20px 15px;
+    }
+
+    .menu-container {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    .accordion-header {
+        padding: 20px 15px;
+        font-size: 1.2em;
+    }
+
+    .header-icon {
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+    }
+
+    .menu-item {
+        padding: 15px 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-item img {
+        width: 100px;
+        height: 100px;
+        margin-right: 0;
+        margin-bottom: 10px;
+        align-self: center;
+    }
+
+    .item-details {
+        padding: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .item-price {
+        margin-left: 0;
+        margin-top: 10px;
+        align-self: center;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px 10px;
+    }
+
+    .menu-container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .accordion-header {
+        padding: 15px 10px;
+        font-size: 1em;
+        min-height: 60px;
+    }
+
+    .menu-item {
+        padding: 10px 8px;
+    }
+
+    .menu-item img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 8px;
+    }
+
+    .item-name {
+        font-size: 1em;
+    }
+
+    .item-price {
+        font-size: 1em;
+    }
+
+    h4 {
+        font-size: 0.8em;
+    }
+}
+
