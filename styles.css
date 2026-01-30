@@ -201,12 +201,12 @@ h4 {
 /* Responsive Design */
 @media (max-width: 768px) {
     body {
-        padding: 20px 15px;
+        padding: 10px 10px;
     }
 
     .menu-container {
         max-width: 100%;
-        padding: 20px;
+        padding: 10px;
     }
 
     h1 {
