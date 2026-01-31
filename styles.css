@@ -13,9 +13,9 @@ body {
 }
 
 .logo img {
-    max-width: 400px;
+    max-width: 450px;
     height: auto;
-    max-height: 100px;
+    max-height: 120px;
 }
 
 .menu-container {
