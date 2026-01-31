@@ -8,8 +8,9 @@
 </head>
 <body>
     <div class="menu-container">
-        <h1>Göbiş Kafe Menü</h1>
-
+        <div class="logo">
+            <img src="images/gobis-cafe-neon-logo1.png">
+        </div>
         <div class="section">
             <h2 class="accordion-header anayemekler-header"> Ana yemekler</h2>
             <div class="accordion-content">
@@ -316,21 +317,21 @@
                 <span class="item-price">90₺</span>
             </div>
             <div class="menu-item">
-                <img src="images/" alt="Bitki çayları">
+                <img src="images/bitki_çayları.webp" alt="Bitki çayları">
                 <div class="item-details">
                     <span class="item-name">Bitki çayları</span>
                 </div>
                 <span class="item-price">80₺</span>
             </div>
             <div class="menu-item">
-                <img src="images/" alt="Ihlamur">
+                <img src="images/ıhlamur.jpg" alt="Ihlamur">
                 <div class="item-details">
                     <span class="item-name">Ihlamur</span>
                 </div>
                 <span class="item-price">100₺</span>
             </div>
             <div class="menu-item">
-                <img src="images/" alt="Sıcak çikolata">
+                <img src="images/sıcak_çikolata.webp" alt="Sıcak çikolata">
                 <div class="item-details">
                     <span class="item-name">Sıcak çikolata</span>
                 </div>
@@ -342,16 +343,16 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const headers = document.querySelectorAll('.accordion-header');
-            
+
             headers.forEach(header => {
                 header.addEventListener('click', function() {
                     const content = this.nextElementSibling;
                     const isOpen = content.style.maxHeight;
-                    
+
                     document.querySelectorAll('.accordion-content').forEach(item => {
                         item.style.maxHeight = null;
                     });
-                    
+
                     if (isOpen) {
                         content.style.maxHeight = null;
                     } else {
